@@ -9,13 +9,13 @@
 </head>
 
 <div id="webchat">
-<script src="https://storage.googleapis.com/mrbot-cdn/webchat-0.5.9.js" type="text/javascript"></script>
+<script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js" type="text/javascript"></script>
 <script>
   WebChat.default.init({
     selector: "#webchat",
     initPayload: "/get_started",
     customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-    socketUrl: "http://localhost:5005",
+    socketUrl: "http://127.0.0.1:5005",
     socketPath: "/socket.io/",
     title: "Chatbot",
     subtitle: "",
